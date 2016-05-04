@@ -1,17 +1,19 @@
 ---
-title: API Reference
+title: BetterWorks API
 
 language_tabs:
-  - shell
-  - ruby
-  - python
+  - shell: cURL
+  - ruby: Ruby
+  - python: Python
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
+  - <a href='#'>Sign Up for a BetterWorks Developer Key</a>
+  - <a href='#'>Best API Ever</a>
   - <a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a>
 
 includes:
   - errors
+  - keyresults
 
 search: true
 ---
@@ -31,54 +33,54 @@ This example API documentation page was created with [Slate](https://github.com/
 ```ruby
 require 'kittn'
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
+api = Kittn::APIClient.authorize!('BWApiToken')
 ```
 
 ```python
 import kittn
 
-api = kittn.authorize('meowmeowmeow')
+api = kittn.authorize('BWApiToken')
 ```
 
 ```shell
 # With shell, you can just pass the correct header with each request
 curl "api_endpoint_here"
-  -H "Authorization: meowmeowmeow"
+  -H "Authorization: BWApiToken"
 ```
 
-> Make sure to replace `meowmeowmeow` with your API key.
+> Make sure to replace `BWApiToken` with your API key.
 
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
+BetterWorks uses API keys to allow access to the API. You can register a new BetterWorks API key at our [developer portal](http://example.com/developers).
 
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
+BetterWorks expects for the API key to be included in all API requests to the server in a header that looks like the following:
 
-`Authorization: meowmeowmeow`
+`Authorization: BWApiToken`
 
 <aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
+You must replace <code>BWApiToken</code> with your personal API key.
 </aside>
 
-# Kittens
+# Goals
 
-## Get All Kittens
+## Get All Goals
 
 ```ruby
-require 'kittn'
+require 'bwapi'
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
+api = BWAPI::APIClient.authorize!('BWApiToken')
 api.kittens.get
 ```
 
 ```python
-import kittn
+import bwapi
 
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get()
+api = BWAPI.authorize('BWApiToken')
+api.goals.get()
 ```
 
 ```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
+curl "http://example.com/api/goals"
+  -H "Authorization: BWApiToken"
 ```
 
 > The above command returns JSON structured like this:
@@ -102,11 +104,11 @@ curl "http://example.com/api/kittens"
 ]
 ```
 
-This endpoint retrieves all kittens.
+This endpoint retrieves all Goals.
 
 ### HTTP Request
 
-`GET http://example.com/api/kittens`
+`GET http://example.com/api/goals`
 
 ### Query Parameters
 
