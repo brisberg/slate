@@ -120,7 +120,8 @@
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id="introduction">Introduction</h1>
+        
+          <h1 id="introduction">Introduction</h1>
 
 <p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
 
@@ -128,7 +129,7 @@
 
 <p>This example API documentation page was created with <a href="https://github.com/tripit/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&rsquo;s documentation.</p>
 
-<h1 id="authentication">Authentication</h1>
+          <h1 id="authentication">Authentication</h1>
 
 <blockquote>
 <p>To authorize, use this code:</p>
@@ -148,6 +149,8 @@ curl <span class="s2">"api_endpoint_here"</span>
 
 <blockquote>
 <p>Make sure to replace <code class="prettyprint">BWApiToken</code> with your API key.</p>
+
+<p>shell Shell mark up test</p>
 </blockquote>
 
 <p>BetterWorks uses API keys to allow access to the API. You can register a new BetterWorks API key at our <a href="http://example.com/developers">developer portal</a>.</p>
@@ -159,6 +162,9 @@ curl <span class="s2">"api_endpoint_here"</span>
 <aside class="notice">
 You must replace <code>BWApiToken</code> with your personal API key.
 </aside>
+
+          <p>includes:
+  - goaldetail</p>
 
 <h1 id="goals">Goals</h1>
 
@@ -278,6 +284,27 @@ Remember — a happy kitten is an authenticated kitten!
 </tr>
 </tbody></table>
 
+          
+          <h1 id="key-results">Key Results</h1>
+
+<p>In addition to goal tracking information, you can request information about key results and milestones.</p>
+
+<h2 id="gettting-all-key-results">Gettting all Key Results</h2>
+
+<p>Retrieve information about all Key Results using the following URL:</p>
+
+<p>&lsquo;GET http://example.com/api/keyresults&rsquo;</p>
+
+<h2 id="getting-a-key-result">Getting a Key Result</h2>
+
+<p>Retreve a specific artist using the following URL:</p>
+
+<p>&#39;GET http://example.com/api/keyresult/[ID]&rsquo;</p>
+
+<aside class="notice">
+Replace [ID] with the numeric ID of the Key Result
+</aside>
+
           <h1 id="errors">Errors</h1>
 
 <aside class="notice">This error section is stored in a separate file in `includes/_errors.md`. Slate allows you to optionally separate out your docs into many files&hellip;just save them to the `includes` folder and add them to the top of your `index.md`&rsquo;s frontmatter. Files are included in the order listed.</aside>
@@ -335,26 +362,6 @@ Remember — a happy kitten is an authenticated kitten!
 <td>Service Unavailable &ndash; We&rsquo;re temporarially offline for maintanance. Please try again later.</td>
 </tr>
 </tbody></table>
-
-          <h1 id="key-results">Key Results</h1>
-
-<p>In addition to goal tracking information, you can request information about key results and milestones.</p>
-
-<h2 id="gettting-all-key-results">Gettting all Key Results</h2>
-
-<p>Retrieve information about all Key Results using the following URL:</p>
-
-<p>&lsquo;GET http://example.com/api/keyresults&rsquo;</p>
-
-<h2 id="getting-a-key-result">Getting a Key Result</h2>
-
-<p>Retreve a specific artist using the following URL:</p>
-
-<p>&#39;GET http://example.com/api/keyresult/[ID]&rsquo;</p>
-
-<aside class="notice">
-Replace [ID] with the numeric ID of the Key Result
-</aside>
 
       </div>
       <div class="dark-box">
